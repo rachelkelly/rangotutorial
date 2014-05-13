@@ -16,3 +16,7 @@ def index(request):
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
     return render_to_response('rango/index.html', context_dict, context)
+
+def about(request):
+    context = RequestContext(request)
+    return render_to_response('rango/about.html', context)
